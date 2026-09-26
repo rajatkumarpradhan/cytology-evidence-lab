@@ -1,4 +1,4 @@
-# Cytology Evidence Lab
+<img src="assets/banner.svg" alt="cytology-evidence-lab" width="100%">
 
 [![CI](https://github.com/rajatkumarpradhan/cytology-evidence-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/rajatkumarpradhan/cytology-evidence-lab/actions/workflows/ci.yml)
 
@@ -27,20 +27,7 @@ The training command writes `artifacts/report.json`, `artifacts/model.joblib`, a
 
 ## Architecture and evaluation
 
-```
-Packaged UCI WDBC -> stratified 80/20 holdout (seed 42)
-                    -> training-only EDA and row-wise ratio features
-                    -> nested stratified CV: inner grid tuning, outer family comparison
-                       (scaled logistic regression vs random forest)
-                    -> refit best hyperparameters on training only
-                    -> training-fold sigmoid probability calibration
-                    -> cross-fitted training probabilities -> F2 threshold
-                    -> single untouched holdout assessment
-                       ROC AUC, PR average precision, Brier, sensitivity,
-                       specificity, confusion counts, bootstrap ROC AUC interval
-                    -> permutation feature importance on original holdout columns
-                    -> JSON evidence -> local question router with field citations
-```
+<img src="assets/diagram.svg" alt="Architecture and workflow diagram" width="100%">
 
 The `RatioFeatures` transformer adds worst/mean radius, worst/mean area, and worst/mean concave-point ratios. All scaling is inside the estimator pipeline and fit within training folds. The holdout never chooses hyperparameters or the threshold. The per-family outer CV scores are model-selection estimates and are **not** an independent unbiased final estimate of the overall selection procedure; the untouched test is the final reported estimate. The ROC AUC bootstrap interval resamples the held-out predictions and does not capture retraining variance. Permutation importance is descriptive, test-only, and may divide importance across correlated measurements; it is not causal or a patient-level explanation. The histogram is a diagnostic visualization, not a calibration plot.
 

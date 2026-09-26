@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="854" height="150" viewBox="0 0 854 150">
+  <rect width="854" height="150" fill="#0d1117"/>
+  <g stroke="#161b22" stroke-width="1" fill="none">
+    <path d="M0 37.5 H854 M0 75 H854 M0 112.5 H854"/>
+    <path d="M142 0 V150 M284 0 V150 M426 0 V150 M568 0 V150 M710 0 V150"/>
+  </g>
+  <g stroke="#1f6feb" stroke-opacity="0.35" stroke-width="1" fill="none">
+    <path d="M726 36 L776 58 L764 104 L828 84 L818 42"/>
+  </g>
+  <g fill="#1f6feb" fill-opacity="0.5">
+    <circle cx="726" cy="36" r="3.5"/><circle cx="776" cy="58" r="3.5"/><circle cx="764" cy="104" r="3.5"/><circle cx="828" cy="84" r="3.5"/><circle cx="818" cy="42" r="3.5"/>
+  </g>
+  <text x="44" y="70" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="30" font-weight="600" fill="#e6edf3">Cytology Evidence Lab</text>
+  <text x="44" y="100" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" fill="#7d8590">Leakage-aware validation, calibration and evidence-grounded Q&amp;A</text>
+  <rect x="44" y="114" width="42" height="3" fill="#1f6feb"/>
+</svg>
