@@ -21,7 +21,8 @@ evaluation hygiene, not a medical product.
 
 - Source: UCI Machine Learning Repository, "Breast Cancer Wisconsin
   (Diagnostic)", DOI [10.24432/C5DW2B](https://doi.org/10.24432/C5DW2B),
-  Wolberg, Mangasarian, Street & Street; licensed CC BY 4.0 per UCI.
+  Wolberg, Mangasarian, Street & Street. License: check the dataset page
+for UCI's current terms before reuse.
 - 569 rows, 30 numeric features from digitized fine-needle aspirate images;
   212 malignant / 357 benign.
 - Loaded from scikit-learn's packaged copy (`load_breast_cancer`); no
