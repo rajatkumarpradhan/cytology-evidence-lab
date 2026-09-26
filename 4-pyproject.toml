@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cytology-evidence-lab"
+version = "0.1.0"
+description = "Reproducible tabular ML research and evidence-grounded analysis assistant"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "scikit-learn>=1.5,<2", "matplotlib>=3.7,<4", "joblib>=1.4,<2"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+cytology-lab = "cytology_lab:main"
+
+[tool.setuptools]
+py-modules = ["cytology_lab"]
