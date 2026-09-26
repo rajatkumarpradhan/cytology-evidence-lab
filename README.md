@@ -7,7 +7,7 @@
 **Start here:** [Run the project](#run) · [Evaluation design](#architecture-and-evaluation) · [Responsible-use limits](#limitations-and-responsible-use) · [Model card](MODEL_CARD.md)
 
 
-A reproducible, offline data-science research project on the public [Wisconsin Diagnostic Breast Cancer dataset](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic). The aim is to evaluate a tabular classification workflow and explain its evidence, **not diagnose anyone**. The dataset has 569 historical records and 30 numerical measurements from digitized fine-needle aspirate images. The source is UCI (Wolberg, W., Mangasarian, O., Street, N., & Street, W.; see UCI citation and DOI [10.24432/C5DW2B](https://doi.org/10.24432/C5DW2B)); UCI lists the dataset under CC BY 4.0. It is loaded from scikit-learn's packaged copy, so no data download, cloud credentials, API key or GPU is needed. Malignant is explicitly mapped to the positive class.
+A reproducible, offline data-science research project on the public [Wisconsin Diagnostic Breast Cancer dataset](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic). The aim is to evaluate a tabular classification workflow and explain its evidence, **not diagnose anyone**. The dataset has 569 historical records and 30 numerical measurements from digitized fine-needle aspirate images. The source is UCI (Wolberg, W., Mangasarian, O., Street, N., & Street, W.; see UCI citation and DOI [10.24432/C5DW2B](https://doi.org/10.24432/C5DW2B)); Check the dataset page for UCI's current license terms before reuse. It is loaded from scikit-learn's packaged copy, so no data download, cloud credentials, API key or GPU is needed. Malignant is explicitly mapped to the positive class.
 
 ## Run
 
